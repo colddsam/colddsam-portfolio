@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "In this project I have used simple HTML,SCSS and Java Script to make a static portfolio website.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colddsam/colddsam-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colddsam/colddsam-portfolio/issues"
+  },
+  "homepage": "https://github.com/colddsam/colddsam-portfolio#readme",
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "dotenv": "^16.3.1",
+    "dotenv-webpack": "^8.0.1",
+    "emailjs": "^4.0.3"
+  }
+}

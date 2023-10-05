@@ -1,8 +1,9 @@
 function main() {
   let menu = document.getElementById("menu__full");
-  menu.addEventListener('click', setNavbar);
+  menu.addEventListener('click', setNavbar)
   scrollEffect();
-
+  let send = document.getElementById("send__review");
+  send.addEventListener('click', sendMail)
 };
 function setNavbar() {
   let navBar = document.getElementById("sec__wrap");
@@ -41,4 +42,32 @@ function scrollEffect() {
   });
 });
 }
+
+function sendMail() {
+            (
+              function () {
+                emailjs.init("Lcxr5HrJTCLCQSm3U");
+                }
+  )();
+            var params={
+                sendername: document.querySelector("#sendername").value,
+                replyto: document.querySelector("#replyto").value,
+                message: document.querySelector("#message").value,
+                designation: document.querySelector("#designation").value
+            };
+            var serviceID="service_486zgew";
+            var templateID="template_1qu00h6";
+            emailjs.send(serviceID,templateID,params)
+            .then(
+              res => {
+                document.querySelector("#sendername").value = '';
+                document.querySelector("#replyto").value = '';
+                document.querySelector("#message").value = '';
+                document.querySelector("#designation").value = '';
+                alert("email sent successfully");
+                }
+            )
+                .catch();
+}
+
 main()

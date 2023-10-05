@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <title>colddsam</title>
     <link rel="icon" type="image/x-icon" href="assets/profile.png">
 </head>
@@ -390,6 +392,36 @@
             </div>
         </div>
         <div class="comment">
+            <div class="field__block">
+                <div class="text">
+                    Your Name 
+                </div>
+                <input type="text" id="sendername" class="field">
+            </div>
+            <div class="field__block">
+                <div class="text">
+                    Email Address
+                </div>
+                <input type="text" id="replyto" class="field">
+            </div>
+            <div class="field__block">
+                <div class="text">
+                    Designation
+                </div>
+                <input type="text" id="designation" class="field">
+            </div>
+            <div class="field__block">
+                <div class="text">
+                    Review
+                </div>
+                <textarea name="message" id="message" class="area"></textarea>
+            </div>
+            <div class="button__section">
+                <button class="review__send" id="send__review">SEND</button>
+            </div>
+            
+        </div>
+        <!-- <div class="comment">
             <div class="line">
                 <div class="text">
                     Any Review?
@@ -399,7 +431,7 @@
             <div class="send">
                 Send
             </div>
-        </div>
+        </div> -->
         <div class="links">
             <div class="link">
                 <a href="https://github.com/colddsam" target="_blank">
@@ -431,7 +463,6 @@
         <div class="target"></div>
     </div>
     <script src="app.js"></script>
-
 </body>
 <footer>
     <p>&copy; 2023-2022 COLDDSAM | All rights reserved</p>
