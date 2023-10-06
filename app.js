@@ -44,6 +44,12 @@ function scrollEffect() {
 }
 
 function sendMail() {
+  if ((document.querySelector("#sendername").value =='') || (document.querySelector("#replyto").value == '') || 
+                (document.querySelector("#message").value = '') ||(
+      document.querySelector("#designation").value = '')) {
+    alert("Enter the fields first");
+    return;
+    }
             (
               function () {
                 emailjs.init("Lcxr5HrJTCLCQSm3U");
@@ -64,7 +70,7 @@ function sendMail() {
                 document.querySelector("#replyto").value = '';
                 document.querySelector("#message").value = '';
                 document.querySelector("#designation").value = '';
-                alert("email sent successfully");
+                alert("Review sent successfully");
                 }
             )
                 .catch();
