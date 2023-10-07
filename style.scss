@@ -342,6 +342,22 @@ body{
                 line-height: 20px;
                 font-weight: 500;
             }
+            .resume{
+                background: linear-gradient(to right, #17B9EB, #1DC9ED);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                text-decoration: none;
+                cursor: pointer;
+                font-family: 'Open Sans', sans-serif;
+                font-size: large;
+                font-weight: 600;
+                line-height: 35px;
+                @media screen and (max-width: 720px) {
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-weight: 500;
+                }
+            }
         }
         
     }
@@ -355,6 +371,7 @@ body{
         }
     }
 }
+
 .skills{
     position: relative;
     margin-top: 20px;
@@ -669,6 +686,7 @@ body{
     
         }
     .section{
+        text-decoration: none;
         padding-top: 35px;
         // margin-right: 40px;
         // padding: 35px;
@@ -848,6 +866,7 @@ body{
         }
     }
     .see__more{
+        text-decoration: none;
         margin-bottom: 10px;
         font-family: 'Open Sans', sans-serif;
         font-size: large;
@@ -960,7 +979,7 @@ body{
 
         }
         .card{
-            box-shadow: 0px 0px 15px 5px #36454F;
+            // box-shadow: 0px 0px 15px 5px #36454F;
             text-decoration: none;
             height: 550px;
             width: 300px;
@@ -1048,6 +1067,7 @@ body{
         }
     }
     .see__more {
+        text-decoration: none;
         font-family: 'Open Sans', sans-serif;
         font-size: large;
         margin-bottom: 10px;
