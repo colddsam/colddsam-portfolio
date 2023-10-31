@@ -79,10 +79,10 @@ function sendMail() {
 "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
 "https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
         $(".body").ripples({
-            resolution: 2000,
+            resolution: 1920,
             dropRadius: 20,
             interactive: true,
-            perturbance: 1,
+            perturbance: 0.02,
         });
 
 let a = document.querySelectorAll(".reveal");
