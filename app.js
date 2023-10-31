@@ -76,13 +76,41 @@ function sendMail() {
                 .catch();
 }
 
-// "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-// "https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+"https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
         $(".body").ripples({
-            resolution: 1024,
+            resolution: 2000,
             dropRadius: 20,
             interactive: true,
-            perturbance: 0.02,
+            perturbance: 1,
         });
 
-main()
+let a = document.querySelectorAll(".reveal");
+a[0].classList.add("active");
+a[1].classList.add("active");
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++){
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementBottom = reveals[i].getBoundingClientRect().bottom;
+    let elmentVisible = 150;
+    // if (elementTop < windowHeight - elmentVisible) {
+    //   reveals[i].classList.add("active");
+    // }
+    // else {
+    //   reveals[i].classList.remove("active");
+    // }
+    if ((elementBottom < elmentVisible) || (windowHeight - elmentVisible < elementTop)) {
+      reveals[i].classList.remove("active");
+    }
+    else {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
+main();
