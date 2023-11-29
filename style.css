@@ -6,6 +6,12 @@ html {
   height: 100%;
   background-color: #0F172A;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
 }
 
 body {
