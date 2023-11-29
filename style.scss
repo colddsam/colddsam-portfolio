@@ -3,7 +3,7 @@
 html{
     scrollbar-width: none;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #0F172A;
     overflow-x: hidden;
     display: flex;
@@ -16,7 +16,7 @@ html{
 body{
     background-size: cover;
     overflow-x: hidden;
-    width: 80vw;
+    width: 90vw;
     height: auto;
     margin: 0px;
     padding: 0px;
